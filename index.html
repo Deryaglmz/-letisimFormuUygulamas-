@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP</title>
+    <style>
+        .InputAlani{
+            width: 100%;
+            height: 15px;
+            margin: 0;
+            padding: 5px 10px 5px 10px;
+        }
+        .TextAreaAlani{
+            width: 100%;
+            height: 150px;
+            margin: 0;
+            padding: 5px 10px 5px 10px;
+        }
+        .GonderButonu{
+            height: 30px;
+            margin: 0;
+            padding: 5px 30px 5px 30px;
+            border: 1px solid #00ff00;
+            background: #009900;
+            color: #FFFFFF;
+        }
+        .GonderButonu:hover{
+            border: 1px solid #000000;
+            background: #00ff00;
+            color: #000000;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <form action="sonuc.php" method="post">
+        <table width="500" border="0" align="center" cellpadding="0">
+            <tr>
+                <td width="150" heigh="30">Adınız Soyadınız</td>
+                <td width="20" heigh="30">:</td>
+                <td width="330" heigh="30"><input type="text" name="adisoyadi" class="InputAlani"></td>
+            </tr>
+            <tr>
+                <td width="150" heigh="30">Telefon Numaranız</td>
+                <td width="20" heigh="30">:</td>
+                <td width="330" heigh="30"><input type="text" name="telefon" class="InputAlani"></td>
+            </tr>
+            <tr>
+                <td width="150" heigh="30">E-Mail Adresiniz</td>
+                <td width="20" heigh="30">:</td>
+                <td width="330" heigh="30"><input type="email" name="emailadresi" class="InputAlani"></td>
+            </tr>
+            <tr>
+                <td width="150" heigh="30">Konu</td>
+                <td width="20" heigh="30">:</td>
+                <td width="330" heigh="30"><input type="text" name="konusu" class="InputAlani"></td>
+            </tr>
+            <tr>
+                <td width="150" heigh="30">Mesaj</td>
+                <td width="20" heigh="30">:</td>
+                <td width="330" heigh="30"><textarea class="TextAreaAlani" name="mesaj"></textarea></td>
+            </tr>
+            <tr>
+                <td width="150" heigh="30">&nbsp;</td>
+                <td width="20" heigh="30">&nbsp;</td>
+                <td width="330" heigh="30" align="left"><input type="submit" class="GonderButonu" value="Gönder"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
